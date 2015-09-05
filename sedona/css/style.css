@@ -4,3 +4,22 @@ body {
   font-family: "PT Sans Regular", Arial, sans-serif;
   color: #333333;
 }
+
+.main-image {
+  background: url("../img/main-img.jpg");
+  width: 2705px;
+  height: 1800px;
+
+}
+
+.map {
+  background: url("../img/map.png");
+  width: 1200px;
+  height: 590px;
+
+}
+
+.main-filter {
+  background: url("../img/filter-bg.jpg");
+
+}
