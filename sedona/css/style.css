@@ -20,6 +20,7 @@ body {
 
 .container {
   margin: 0 auto;
+/*Не понимаю как сделать внутреннюю центровку 1056 (внутренние направляющие)*/
 
 }
 
@@ -176,5 +177,15 @@ body {
 
 .hotel-rating {
   float: right;
+
+}
+
+.hotel-item {
+  /* Как сделать чтобы двойной обводкт не было?
+  Или только у последнего делать доп. сласс и только у него прописывать border-bottom? */
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
 }
