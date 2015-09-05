@@ -3,12 +3,88 @@ body {
   line-height: 21px;
   font-family: "PT Sans Regular", Arial, sans-serif;
   color: #333333;
+  text-transform: uppercase;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.main-header {
+  padding: 5px 0;
+
+}
+
+.container {
+  margin: 0 auto;
+
 }
 
 .main-image {
   background: url("../img/main-img.jpg");
   width: 2705px;
   height: 1800px;
+
+}
+
+.main-navigation {
+  width: 1200px;
+
+}
+
+.slogan {
+  width: 458px;
+  margin: 0 auto;
+}
+
+.about {
+  text-align: center;
+
+}
+
+.features-row {
+  margin-bottom: 77px;
+
+}
+
+.features-item {
+  width: 400px;
+  float: left;
+  text-align: center;
+
+}
+
+.reason-item {
+  width: 400px;
+  float: left;
+  text-align: center;
+
+}
+
+.reason-photo {
+  width: 800px;
+  float: left;
+
+}
+
+
+.offer {
+  width: 1200px;
+  text-align: center;
+}
+
+.form {
+  /* Почему не работает? */
+  width: 565px;
+
+}
+
+.search-form a {
+  /* Почему не работает? */
+  text-align: center;
 
 }
 
@@ -19,7 +95,86 @@ body {
 
 }
 
-.main-filter {
+.main-footer {
+  padding: 20px 0;
+
+}
+
+.footer-hashtag {
+  width: 400px;
+  float: left;
+}
+
+.footer-social {
+  width: 400px;
+  float: left;
+
+}
+
+.footer-copyright {
+  width: 400px;
+  float: right;
+
+}
+
+
+/* Внутренняя страница */
+
+.filter {
+  /* Почему не работате?*/
   background: url("../img/filter-bg.jpg");
+
+}
+
+.filter-unit {
+  float: left;
+
+}
+
+.ranges-filter-unit {
+  float: right;
+
+}
+
+.ranging {
+  clear: both;
+}
+
+.ranging-title {
+  float: left;
+  width: 135px;
+
+}
+
+.sorting {
+  float: left;
+  margin-left: 30px;
+
+}
+
+.sorting-title {
+  float: left;
+
+}
+
+.sorting-arrow {
+  float: right;
+
+}
+
+.hotel-photo {
+  float: left;
+  width: 135px;
+  height: 90px;
+}
+
+.hotel-description {
+  float: left;
+  margin-left: 30px;
+
+}
+
+.hotel-rating {
+  float: right;
 
 }
