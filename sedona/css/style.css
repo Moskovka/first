@@ -73,6 +73,25 @@ body {
 
 .about {
   text-align: center;
+  padding-top: 63px;
+  width: 700px;
+  /*Как померить какого он на самом деле размера?
+  я на глаз определила*/
+  margin-left: 282px;
+  margin-right: 282px;
+
+
+}
+
+.about h1 {
+  font-size: 21px;
+  line-height: 25px;
+  padding-bottom: 38px;
+
+}
+
+.about p {
+  padding-bottom: 57px;
 
 }
 
