@@ -96,9 +96,18 @@ body {
 }
 
 .reason-item {
+  width: 400px;
+  float: left;
+  text-align: center;
   background: #81b3d2;
   color: #ffffff;
   padding-top: 55px;
+
+}
+
+.reason-photo {
+  width: 800px;
+  float: left;
 
 }
 
@@ -139,18 +148,6 @@ body {
 
 }
 
-.reason-item {
-  width: 400px;
-  float: left;
-  text-align: center;
-
-}
-
-.reason-photo {
-  width: 800px;
-  float: left;
-
-}
 
 
 .offer {
