@@ -95,6 +95,38 @@ body {
 
 }
 
+.reason-item {
+  background: #81b3d2;
+  color: #ffffff;
+  padding-top: 55px;
+
+}
+
+.reason-item-additional {
+  background: #eeeeee;
+  color: #000000;
+
+}
+
+.reason-title {
+  padding-bottom: 25px;
+ /*Как сделать короткий заголовок и чтобы высота у правого
+ и левого блоков была одинаковая?*/
+}
+
+.reason-number {
+  padding-bottom: 28px;
+
+}
+
+.reason-item p {
+  width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /*Как снять точные размеры?*/
+
+}
+
 .features-row {
   margin-bottom: 77px;
 
