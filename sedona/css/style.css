@@ -95,18 +95,47 @@ body {
   text-align: center;
 }
 
-.form {
-  /* Почему не работает? */
-  width: 565px;
+.search-form a {
+  display: inline-block;
+  width: 568px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #766357;
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
 
 }
 
-.search-form a {
-  /* Почему не работает?
-  блочно-строчный элемент
-  */
-  text-align: center;
+.hidden-form {
+  width: 568px;
+  padding-top: 55px;
+  padding-left: 55px;
+  background: #ffffff;
+  color: #000000;
 
+}
+
+.btn-find {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 455px;
+  padding: 15px 20px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background: #81b3d2;
+  border: none;
+  text-transform: uppercase;
+  /*Почему не наследуется uppercase?*/
 }
 
 .map {
