@@ -80,7 +80,6 @@ body {
   margin-left: 282px;
   margin-right: 282px;
 
-
 }
 
 .about h1 {
@@ -138,7 +137,6 @@ body {
 
 .features-row {
 
-
 }
 
 .features-item {
@@ -179,11 +177,24 @@ body {
 
 }
 
-
-
 .offer {
-  width: 1200px;
   text-align: center;
+  padding-top: 55px;
+
+}
+
+.offer-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  padding-bottom: 32px;
+
+}
+
+.offer p {
+  line-height: 24px;
+  padding-bottom: 133px;
+  /*Нужны ли paddings?*/
 }
 
 .search-form a {
