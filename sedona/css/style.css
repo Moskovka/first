@@ -248,13 +248,17 @@ body {
 }
 
 .main-footer {
-  padding: 20px 0;
-
+  padding-top: 48px;
+  padding-left: 75px;
+  text-align: center;
 }
 
 .footer-hashtag {
   width: 400px;
   float: left;
+  font-size: 21px;
+  line-height: 25px;
+
 }
 
 .footer-social {
@@ -263,9 +267,31 @@ body {
 
 }
 
+.social-btn {
+  margin: 0 6px;
+  display: inline-block;
+  vertical-align: top;
+  width: 46px;
+  height: 48px;
+
+  font-size: 0;
+  text-decoration: none;
+
+  background: #81b3d2 url("...img/sprite.png") no-repeat center;
+
+  /*Как сделать кнопки наравне с VISITSEDONA?*/
+
+}
+
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
 .footer-copyright {
   width: 400px;
   float: right;
+  text-align: center;
+  /*Как сделать текст наравне с VISITSEDONA?*/
 
 }
 
