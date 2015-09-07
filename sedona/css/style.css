@@ -4,7 +4,6 @@ body {
   font-family: "PT Sans Regular", Arial, sans-serif;
   color: #333333;
   text-transform: uppercase;
-  min-width: 1200px;
   background: #ffffff;
 }
 
@@ -15,7 +14,6 @@ body {
 }
 
 .main-navigation {
-  width: 1200px;
 
 }
 .main-navigation ul {
@@ -31,9 +29,8 @@ body {
 }
 
 .main-navigation a {
-  display: block;
+  display: inline-block;
   text-align: center;
-  width: 239px;
   text-decoration: none;
   color: #000000;
   padding-top: 22px;
@@ -42,15 +39,14 @@ body {
 
 .container {
   margin: 0 auto;
-/*Не понимаю как сделать внутреннюю центровку 1056 (внутренние направляющие)*/
+  min-width: 768px;
+  max-width: 1200px;
 
 }
 
 .main-image {
   background: url("../img/main-img.jpg");
-  width: 2705px;
-  height: 1800px;
-
+  background-size: 100%;
 }
 
 .main-navigation {
@@ -106,7 +102,9 @@ body {
 }
 
 .search-form a {
-  /* Почему не работает? */
+  /* Почему не работает?
+  блочно-строчный элемент
+  */
   text-align: center;
 
 }
@@ -144,7 +142,11 @@ body {
 /* Внутренняя страница */
 
 .filter {
-  /* Почему не работате?*/
+  /* Почему не работате?
+  верхие нижние отступы
+  background-size% 100%
+  background-position: center;
+  min-height: px*/
   background: url("../img/filter-bg.jpg");
 
 }
@@ -204,7 +206,9 @@ body {
 
 .hotel-item {
   /* Как сделать чтобы двойной обводкт не было?
-  Или только у последнего делать доп. сласс и только у него прописывать border-bottom? */
+  Или только у последнего делать доп. сласс и только у него прописывать border-bottom?
+
+  псевдо класс */
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 30px;
