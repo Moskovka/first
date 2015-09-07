@@ -21,11 +21,13 @@ body {
   padding: 0;
   list-style: none;
 
+
 }
 
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
+
 }
 
 .main-navigation a {
@@ -37,12 +39,20 @@ body {
   padding-bottom: 22px;
   padding-left: 75px;
   padding-right: 75px;
-  /*у первого и третьего еще паддинги*/
+  border: 2px solid red;
+  /*Как сделать чтобы не выпадало меню?
+  У последнего li убрать правый падинг?
+
+  я подсветила пока border, так как не понимаю как убрать
+  пробелы между ними.. я прочитала вот это https://htmlacademy.ru/blog/21,
+  но мне все эти методы показались странными.. есть другой способ? )
+  вообщем что делать в такой ситуации? ) */
+
 }
 
-.main-navigation a:nth-child(2) {
-  padding-right: 120px;
-  /*Не работает*/
+.main-navigation li:nth-child(2) {
+  padding-right: 244px;
+
 }
 
 
