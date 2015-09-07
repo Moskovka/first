@@ -137,7 +137,7 @@ body {
 }
 
 .features-row {
-  margin-bottom: 77px;
+
 
 }
 
@@ -145,6 +145,37 @@ body {
   width: 400px;
   float: left;
   text-align: center;
+  padding-top: 162px;
+  padding-bottom: 86px;
+
+}
+
+.features-item-flat {
+  background: url("../img/icon-flat.png") no-repeat 162px 60px;
+
+}
+
+.features-item-food {
+  background: url("../img/icon-food.png") no-repeat 162px 60px;
+
+}
+
+.features-item-souvenirs {
+  background: url("../img/icon-souvenirs.png") no-repeat 162px 60px;
+
+}
+
+.features-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+}
+
+.features-item p {
+  padding-right: 50px;
+  padding-left: 50px;
+  /*Как точно рассчитать?*/
 
 }
 
