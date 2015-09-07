@@ -67,6 +67,8 @@ body {
 .slogan {
   width: 458px;
   margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 80px;
 }
 
 .about {
