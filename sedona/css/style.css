@@ -316,21 +316,128 @@ body {
   background-position: center;
   min-height: px*/
   background: url("../img/filter-bg.jpg");
+  background-size: 100%;
+  background-position: center;
+  min-height: 217px;
 
 }
 
 .filter-unit {
   float: left;
+  padding-top: 30px;
+  padding-left: 75px;
+  color: #ffffff;
 
 }
 
 .ranges-filter-unit {
   float: right;
+  padding-top: 30px;
+  color: #ffffff;
+
+
+
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 31px;
+
+}
+
+.options {
+  padding-bottom: 32px;
+
+}
+
+.switching-unit {
+  margin-left: 10px;
+  margin-right: 72px;
+
+}
+
+.price-controls {
+  opacity: 0.5; /*как сделать блок 100%-прозрачным, а текст нет?*/
+  border: 2px solid #ffffff;
+
+
+}
+
+.price-controls label {
+  width: 157px; /* общая ширина 318, -4border = 314 / 2 = 157 Почеум не работает? */
+
+}
+
+.price-controls input {
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-transform: uppercase; /*почему не наследует у body?*/
+
+}
+
+.slider {
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 22px;
+
+}
+
+.scale {
+  height: 2px;
+  background: #757475; /*какой цвет? там какая то прозрачная полоска, как это сделать?*/
+  width: 318px;
+
+}
+
+.slider .bar {
+  width: 90%; /*как вычислить процент?*/
+  height: 2px;
+  background: #ffffff;
+
+}
+
+.slider .toggle {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  cursor: pointer;
+
+}
+
+.slider .slider-min {
+
+}
+
+.slider .slider-max {
+  left: 252px;
+
+}
+
+.filter-submit input {
+  border: 2px solid #fff;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  min-width: 137px;
+  text-transform: uppercase; /*почему не наследует у body?*/
+  margin-left: 95px;
+  margin-right: 95px;
+  opacity: 0.5; /*как сделать блок 100%-прозрачным, а текст нет?*/
 
 }
 
 .ranging {
   clear: both;
+  padding-top: 28px;
+  padding-left: 75px;
+
 }
 
 .ranging-title {
@@ -350,8 +457,31 @@ body {
 
 }
 
+.sorting-title li {
+  display: inline;
+
+}
+
+.sorting-title li a {
+  color: rgba(0,0,0,0.3);
+  text-decoration-style: dotted; /*не работает*/
+  font-size: 12px;
+
+}
+
+.sorting-title .active {
+  color: #81b3d2;
+  text-decoration: none;
+
+}
+
 .sorting-arrow {
   float: right;
+
+}
+
+.sorting-arrow li {
+  display: inline;
 
 }
 
@@ -373,13 +503,12 @@ body {
 }
 
 .hotel-item {
-  /* Как сделать чтобы двойной обводкт не было?
-  Или только у последнего делать доп. сласс и только у него прописывать border-bottom?
-
-  псевдо класс */
-  border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 30px;
   padding-bottom: 30px;
 
+}
+
+.hotel-item:first-child {
+  border-top: 1px solid #e5e5e5;
 }

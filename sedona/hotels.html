@@ -37,39 +37,65 @@
               Инфраструктура
 
             </div>
-              <input type="checkbox" name="pool" value="" id="pool" checked>
+              <div class="options">
+                <input type="checkbox" name="pool" value="" id="pool" checked>
                 <label for="pool">Бассейн</label>
-              <input type="checkbox" name="parking" value="" id="parking">
+              </div>
+              <div class="options">
+                <input type="checkbox" name="parking" value="" id="parking">
                 <label for="parking">Парковка</label>
-              <input type="checkbox" name="wifi" value="" id="wifi">
+              </div>
+              <div class="options">
+                <input type="checkbox" name="wifi" value="" id="wifi">
                 <label for="wifi">Wi-fi</label>
+              </div>
           </div>
 
           <div class="filter-unit">
             <div class="filter-title">
               Тип жилья
             </div>
-              <input type="checkbox" name="hotel" value="" id="hotel" checked>
+              <div class="options">
+                <input type="checkbox" name="hotel" value="" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
+              </div>
+              <div class="options">
               <input type="checkbox" name="motel" value="" id="motel" checked>
                 <label for="motel">Мотель</label>
+              </div>
+              <div class="options">
               <input type="checkbox" name="apartments" value="" id="apartments" checked>
                 <label for="apartments">Аппартаменты</label>
+              </div>
           </div>
 
           <div class="ranges-filter-unit">
             <div class="filter-title">
               Стоимость в сутки
             </div>
-            от <input type="number" name="" value="0" id="">
-            до <input type="number" name="" value="300" id="">
+
+            <div class="switching-unit">
+
+            <div class="price-controls">
+              <label class="min-price"><input type="text" name="" value="от 0" id=""></lable>
+              <label class="max-price"><input type="text" name="" value="до 3000" id=""></lable>
+            </div>
+
             <div class="slider">
-              <div class="slider-min">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="slider-max">
+              <div class="toggle slider-min">
+              </div>
+              <div class="toggle slider-max">
               </div>
             </div>
-            <input type="submit" value="Показать">
+
+            <div class="filter-submit">
+              <input type="submit" value="Показать">
+            </div>
+
+            </div>
           </div>
         </form>
       </div>
