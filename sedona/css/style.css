@@ -485,6 +485,40 @@ body {
 
 }
 
+.arrow {
+  position: relative;
+  border-radius: 5px;
+
+}
+
+.arrow::after {
+ content: '';
+ position: absolute;
+ bottom: -5px;
+ border: 5px solid transparent;
+
+}
+
+.arrow-up::after {
+ content: '';
+ position: absolute;
+ right: 95px;
+ bottom: -5px;
+ border: 5px solid transparent;
+ border-bottom: 10px solid #cccccc;
+}
+
+.arrow-down::after {
+  content: '';
+  position: absolute;
+  right: 75px;
+  bottom: -10px;
+  border: 5px solid transparent;
+  border-top: 10px solid #81b3d2;
+}
+/*не очень поняла как именно это работает, но сделала с помощью http://htmlbook.ru/blog/treugolniki-cherez-css*/
+
+
 .hotel-photo {
   float: left;
   width: 135px;
