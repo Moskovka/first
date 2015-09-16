@@ -205,8 +205,7 @@ body {
 .offer {
   text-align: center;
   padding-top: 55px;
-/*Нужны ли paddings
-Задать отступы*/
+
 }
 
 .offer-title {
@@ -214,12 +213,16 @@ body {
   line-height: 36px;
   font-weight: bold;
   padding-bottom: 32px;
+  padding-left: 50px;
+  padding-right: 50px;
 
 }
 
 .offer p {
   line-height: 24px;
   padding-bottom: 133px;
+  padding-left: 50px;
+  padding-right: 50px;
 
 }
 
@@ -229,6 +232,8 @@ body {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
   background: #766357;
   font-size: 21px;
   line-height: 21px;
@@ -249,8 +254,9 @@ body {
 }
 
 .hidden-form label {
+  display: inline-block;
   font-weight: bold;
-  padding-right: 10px;
+  width: 115px;
 
 }
 
@@ -266,6 +272,10 @@ body {
   padding-bottom: 30px;
 
 }
+
+/*Форма:
+— как сделать взрослын и дети в одну строчку
+— как вставивть текст в ячейки*/
 
 .short input {
   width: 115px;
