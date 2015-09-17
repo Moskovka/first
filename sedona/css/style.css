@@ -77,6 +77,9 @@ body {
   background-size: 100%;
 }
 
+/*псевдо элемент after
+100% ширины*/
+
 .main-navigation {
   width: 1200px;
 
@@ -116,13 +119,22 @@ body {
   text-align: center;
   background: #81b3d2;
   color: #ffffff;
-  padding-top: 55px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
 }
 
 .reason-photo {
   width: 800px;
   float: left;
+  position: relative;
+  overflow: hidden;
+  min-height: 256px;
+
+}
+
+.reason-photo img {
+  position: absolute;
 
 }
 
@@ -134,8 +146,10 @@ body {
 
 .reason-title {
   width: 180px;
-  padding-bottom: 25px;
-  margin: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
   font-size: 21px;
   line-height: 25px;
   font-weight: bold;
@@ -147,15 +161,18 @@ body {
 
 }
 
+
+
+
 .reason-item p {
   width: 300px;
   padding-left: 50px;
   padding-right: 50px;
-
+  margin: 0;
 }
 
 .promo p {
-  padding-bottom: 55px;
+
 
 }
 
@@ -229,9 +246,18 @@ body {
 
 }
 
+
+.search-form {
+  width: 568px;
+  margin: auto;
+  position: relative;
+
+}
+
+
 .search-form a {
   display: inline-block;
-  width: 568px;
+  width: 570px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -248,18 +274,21 @@ body {
 }
 
 .hidden-form {
-  width: 568px;
+  width: 100%;
   padding-top: 55px;
-  padding-left: 55px;
+  padding-left: 56px;
+  padding-right: 56px;
   background: #ffffff;
   color: #000000;
+  position: absolute;
+  box-sizing: border-box;
 
 }
 
 .hidden-form label {
   display: inline-block;
   font-weight: bold;
-  width: 115px;
+  width: 110px;
 
 }
 
@@ -273,6 +302,18 @@ body {
 
 .form-cell {
   padding-bottom: 30px;
+
+}
+
+.form-cell.short {
+  display: inline-block;
+
+}
+
+.form-cell.short + .form-cell.short label {
+  width: 72px;
+  text-align: right;
+  padding-right: 14px;
 
 }
 
@@ -307,7 +348,22 @@ body {
 .map {
   background: url("../img/map.png");
   width: 1200px;
-  height: 590px;
+  height: 592px;
+
+}
+
+.main-footer .container {
+  position: relative;
+
+}
+
+
+.footer-content.transparent {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  top: -120px;
+
 
 }
 
@@ -510,6 +566,7 @@ body {
 
 }
 
+
 .sorting {
   float: left;
   margin-left: 30px;
@@ -518,6 +575,7 @@ body {
 
 .sorting-title {
   float: left;
+  margin: 0;
 
 }
 
@@ -654,3 +712,5 @@ body {
   text-align: center;
 
 }
+
+/*абсолютить звезды в верхний угол и пойны в нижний*/
