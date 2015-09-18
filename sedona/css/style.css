@@ -75,6 +75,7 @@ body {
 .main-image {
   background: url("../img/main-img.jpg");
   background-size: 100%;
+  position: relative;
 }
 
 /*псевдо элемент after
@@ -90,7 +91,16 @@ body {
   margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 80px;
+
 }
+
+.shape {
+  position: absolute;
+  bottom: 0;
+}
+
+/*почему не прибивается к краю?
+теперь еще что-то с логотипом не так :( */
 
 .about {
   text-align: center;
@@ -145,7 +155,7 @@ body {
 }
 
 .reason-title {
-  width: 180px;
+  width: 150px;
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -239,8 +249,9 @@ body {
 }
 
 .offer p {
+  margin: 0;
   line-height: 24px;
-  padding-bottom: 133px;
+  padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
 
