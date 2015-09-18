@@ -688,6 +688,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
 
 }
 
@@ -697,6 +698,32 @@ body {
 
 .hotel-info-item{
   padding-bottom: 18px;
+
+}
+
+
+.stars {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+  margin-right: 72px;
+
+}
+
+
+.point {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #f2f2f2;
+  padding: 5px 17px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #666666;
+  margin-right: 72px;
 
 }
 
@@ -723,11 +750,5 @@ body {
 
 }
 
-.point {
-  background: #f2f2f2;
-  padding: 8px 16px;
-  text-align: center;
-
-}
 
 /*абсолютить звезды в верхний угол и пойны в нижний*/
