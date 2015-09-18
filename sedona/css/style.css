@@ -474,7 +474,7 @@ body {
 .filter-title {
   font-size: 16px;
   font-weight: bold;
-  padding-bottom: 31px;
+  padding-bottom: 13px;
 
 }
 
@@ -484,52 +484,83 @@ body {
 }
 
 .switching-unit {
-  margin-left: 10px;
   margin-right: 72px;
 
 }
 
 .price-controls {
   border: 2px solid #ffffff;
+  margin-left: 10px;
+  position: relative;
 
+
+}
+
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  height: 22px;
+  width: 2px;
+  background: #ffffff;
+  margin-left: -50%;
 
 }
 
 .price-controls label {
-  width: 157px;
+  width: 152px;
   display: inline-block;
+
 }
+
+/*
+.min-price {
+  position: relative;
+}
+
+.min-price::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  height: 22px;
+  width: 2px;
+  background: #ffffff;
+
+}
+
+Что лучше?*/
 
 .price-controls input {
   text-align: center;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
+  width: 100%;
 
-  /*псевдокласс перовому label
- абсолютно позиционированте
- высота
- top: 2px;*/
 }
 
 .slider {
   position: relative;
   padding-top: 20px;
   margin-bottom: 22px;
+  margin-left: 10px;
+
 
 }
 
 .scale {
   height: 2px;
-  background: #757475; /*какой цвет? там какая то прозрачная полоска, как это сделать?*/
-  width: 318px;
+  background: #757475;
+  width: 317px;
 
 }
 
 .slider .bar {
-  width: 90%; /*как вычислить процент?*/
+  width: 80%; /*как вычислить процент?*/
   height: 2px;
   background: #ffffff;
 
@@ -559,10 +590,10 @@ body {
 
 .filter-submit input {
   border: 2px solid #fff;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   text-align: center;
-  min-width: 137px;
+  min-width: 133px;
   text-transform: uppercase;
   margin-left: 95px;
   margin-right: 95px;
