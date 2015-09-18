@@ -75,11 +75,19 @@ body {
 .main-image {
   background: url("../img/main-img.jpg");
   background-size: 100%;
-  position: relative;
 }
 
-/*псевдо элемент after
-100% ширины*/
+.main-image::after {
+  content: "";
+  position: absolute;
+  background: url("../img/shape.png") no-repeat;
+  width: 100%;
+  margin-top: -57px;
+  height: 57px;
+
+}
+
+/*Правильно?*/
 
 .main-navigation {
   width: 1200px;
@@ -93,14 +101,6 @@ body {
   padding-bottom: 80px;
 
 }
-
-.shape {
-  position: absolute;
-  bottom: 0;
-}
-
-/*почему не прибивается к краю?
-теперь еще что-то с логотипом не так :( */
 
 .about {
   text-align: center;
@@ -312,7 +312,6 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   font-weight: bold;
-
 
 }
 
