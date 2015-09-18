@@ -580,6 +580,9 @@ body {
 .ranging-title {
   float: left;
   width: 135px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 21px;
 
 }
 
@@ -587,12 +590,14 @@ body {
 .sorting {
   float: left;
   margin-left: 30px;
+  font-size: 12px;
 
 }
 
 .sorting-title {
   float: left;
   margin: 0;
+  font-size: 12px;
 
 }
 
@@ -603,19 +608,27 @@ body {
 
 .sorting-title li a {
   color: rgba(0,0,0,0.3);
-  text-decoration-style: dotted; /*не работает*/
-  font-size: 12px;
+  /*text-decoration: underline;
+  border-bottom: 1px dashed;*/
+  text-decoration: none;
+  border-bottom: 1px #81b3d2 dotted;
+  margin-right: 30px;
 
 }
 
 .sorting-title .active {
   color: #81b3d2;
   text-decoration: none;
+  border-bottom: 0;
 
 }
 
 .sorting-arrow {
-  float: right;
+
+}
+
+.sorting-arrow ul {
+  margin: 0;
 
 }
 
