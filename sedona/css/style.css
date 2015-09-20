@@ -56,6 +56,15 @@ body {
   padding-right: 5px;
   line-height: 16px;
 
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
 
 }
 
@@ -63,7 +72,6 @@ body {
   padding-right: 20%;
 
 }
-
 
 .container {
   margin: 0 auto;
@@ -171,9 +179,6 @@ body {
 
 }
 
-
-
-
 .reason-item p {
   width: 300px;
   padding-left: 50px;
@@ -182,7 +187,6 @@ body {
 }
 
 .promo p {
-
 
 }
 
@@ -257,14 +261,12 @@ body {
 
 }
 
-
 .search-form {
   width: 568px;
   margin: auto;
   position: relative;
 
 }
-
 
 .search-form a {
   display: inline-block;
@@ -315,8 +317,19 @@ body {
 
 }
 
+.hidden-form input:hover {
+  background: #ebebeb;
+
+}
+
+.hidden-form input:active {
+  background: #ffffff;
+
+}
+
 .form-cell {
   padding-bottom: 30px;
+  position: relative;
 
 }
 
@@ -334,16 +347,24 @@ body {
 
 }
 
-/*Форма:
-— как сделать взрослын и дети в одну строчку
-— как вставивть текст в ячейки*/
-
 .short input {
   width: 103px;
 
 }
 
+.hidden-form input.icon-arrival {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 270px -1060px;
 
+}
+
+.hidden-form input.icon-departure {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 270px -1060px;
+
+}
 
 .btn-find {
   display: inline-block;
@@ -362,6 +383,10 @@ body {
   text-transform: uppercase;
 }
 
+.btn-find:hover {
+  background: #669ec0;
+}
+
 .map {
   background: url("../img/map.png");
   width: 1200px;
@@ -374,16 +399,13 @@ body {
 
 }
 
-
 .footer-content.transparent {
   position: absolute;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
   top: -120px;
 
-
 }
-
 
 .footer-hashtag {
   width: 240px;
@@ -416,9 +438,24 @@ body {
   height: 48px;
   font-size: 0;
   text-decoration: none;
-  background: #81b3d2 url("...img/sprite.png") no-repeat center;
+  background: #81b3d2 url("../img/sprite.png") no-repeat 0% 0%;
+}
+
+.social-btn-tw {
+  background-position: -15px -1703px;
+}
+
+.social-btn-fb {
+  background-position: -12px -902px;
 
 }
+
+.social-btn-youtube {
+  background-position: -17px -1855px;
+
+}
+
+/*на глаз определять?*/
 
 .social-btn:hover {
     background-color: #669ec0;
@@ -443,8 +480,11 @@ body {
   vertical-align: middle;
 }
 
+/*как задать hover? вырезать картинку другого цвета?*/
 
-/* Внутренняя страница */
+
+
+/* ———— Внутренняя страница ———— */
 
 .filter {
   background: url("../img/filter-bg.jpg");
@@ -466,8 +506,6 @@ body {
   float: right;
   padding-top: 30px;
   color: #ffffff;
-
-
 
 }
 
@@ -493,9 +531,7 @@ body {
   margin-left: 10px;
   position: relative;
 
-
 }
-
 
 .price-controls::after {
   content: "";
@@ -543,12 +579,55 @@ body {
 
 }
 
+.options input[type="checkbox"] {
+  display: none;
+
+}
+
+.options input[type="checkbox"] +label  {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+
+}
+
+.options input[type="checkbox"] +label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/sprite.png");
+  width: 20px;
+  height: 20px;
+  background-position: -30px -667px;
+
+}
+
+/*в макете и стайлгайде различаются значения, что выбирать?*/
+
+.options input[type="checkbox"]:checked +label::before {
+  width: 26px;
+  height: 22px;
+  background-position: -30px -505px;
+
+}
+
+.options input[type="checkbox"]:hover +label::before {
+  width: 20px;
+  height: 20px;
+  background-position: -30px -261px;
+
+}
+
+/* не работает hover, меняется при нажатии почему-то
+Там есть еще disabled — делать?*/
+
 .slider {
   position: relative;
   padding-top: 20px;
   margin-bottom: 22px;
   margin-left: 10px;
-
 
 }
 
@@ -617,7 +696,6 @@ body {
 
 }
 
-
 .sorting {
   float: left;
   margin-left: 30px;
@@ -639,8 +717,6 @@ body {
 
 .sorting-title li a {
   color: rgba(0,0,0,0.3);
-  /*text-decoration: underline;
-  border-bottom: 1px dashed;*/
   text-decoration: none;
   border-bottom: 1px #81b3d2 dotted;
   margin-right: 30px;
@@ -699,10 +775,6 @@ body {
   border: 5px solid transparent;
   border-top: 10px solid #81b3d2;
 }
-/*не очень поняла как именно это работает, но сделала с помощью http://htmlbook.ru/blog/treugolniki-cherez-css
-
-убрать div, оставить текст, стилизовать ссылку*/
-
 
 .hotel-photo {
   float: left;
@@ -721,6 +793,10 @@ body {
   font-weight: bold;
   padding-bottom: 15px;
 
+}
+
+.hotel-title:hover {
+  color: #81b3d2;
 }
 
 .hotel-rating {
@@ -746,7 +822,6 @@ body {
 
 }
 
-
 .stars {
   content: "";
   position: absolute;
@@ -757,6 +832,13 @@ body {
 
 }
 
+.four-stars {
+  background-image: url("../img/sprite.png");
+  background-position: -30px -184px;
+
+}
+
+/* why not? */
 
 .point {
   content: "";
@@ -776,8 +858,6 @@ body {
   display: inline-block;
   vertical-align: top;
   padding: 5px 17px;
-
-
   font-size: 14px;
   text-decoration: none;
   text-align: center;
@@ -790,10 +870,187 @@ body {
   margin-right: 6px;
 }
 
+.btn-more:hover {
+  background: #669ec0;
+
+}
+
 .btn-book {
   background: #766357;
 
 }
 
+.btn-book:hover {
+  background: #604e43;
 
-/*абсолютить звезды в верхний угол и пойны в нижний*/
+}
+
+/*что такое положение down?*/
+
+
+
+
+
+/* ———— Спрайты ————— */
+
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ico-2stars {
+    width: 42px;
+    height: 17px;
+    background-position: -30px -30px;
+}
+
+.sprite-ico-3stars {
+    width: 65px;
+    height: 17px;
+    background-position: -30px -107px;
+}
+
+.sprite-ico-4stars {
+    width: 89px;
+    height: 17px;
+    background-position: -30px -184px;
+}
+
+.sprite-ico-checkbox {
+    width: 20px;
+    height: 20px;
+    background-position: -30px -261px;
+}
+
+.sprite-ico-checkbox-ch {
+    width: 26px;
+    height: 22px;
+    background-position: -30px -341px;
+}
+
+.sprite-ico-checkbox-ch-disabled {
+    width: 26px;
+    height: 22px;
+    background-position: -30px -423px;
+}
+
+.sprite-ico-checkbox-ch-hvr {
+    width: 26px;
+    height: 22px;
+    background-position: -30px -505px;
+}
+
+.sprite-ico-checkbox-disabled {
+    width: 20px;
+    height: 20px;
+    background-position: -30px -587px;
+}
+
+.sprite-ico-checkbox-hvr {
+    width: 20px;
+    height: 20px;
+    background-position: -30px -667px;
+}
+
+.sprite-ico-controls {
+    width: 20px;
+    height: 23px;
+    background-position: -30px -747px;
+}
+
+.sprite-ico-controls-hvr {
+    width: 20px;
+    height: 23px;
+    background-position: -30px -830px;
+}
+
+.sprite-ico-fb {
+    width: 10px;
+    height: 19px;
+    background-position: -30px -913px;
+}
+
+.sprite-ico-fb-down {
+    width: 10px;
+    height: 19px;
+    background-position: -30px -992px;
+}
+
+.sprite-ico-form-cal {
+    width: 21px;
+    height: 22px;
+    background-position: -30px -1071px;
+}
+
+.sprite-ico-form-cal-down {
+    width: 21px;
+    height: 22px;
+    background-position: -30px -1153px;
+}
+
+.sprite-ico-form-cal-hvr {
+    width: 21px;
+    height: 22px;
+    background-position: -30px -1235px;
+}
+
+.sprite-ico-form-left {
+    width: 12px;
+    height: 3px;
+    background-position: -30px -1317px;
+}
+
+.sprite-ico-form-left-down {
+    width: 12px;
+    height: 3px;
+    background-position: -30px -1380px;
+}
+
+.sprite-ico-form-left-hvr {
+    width: 12px;
+    height: 3px;
+    background-position: -30px -1443px;
+}
+
+.sprite-ico-form-right {
+    width: 11px;
+    height: 11px;
+    background-position: -30px -1506px;
+}
+
+.sprite-ico-form-right-down {
+    width: 11px;
+    height: 11px;
+    background-position: -30px -1577px;
+}
+
+.sprite-ico-form-right-hvr {
+    width: 11px;
+    height: 11px;
+    background-position: -30px -1648px;
+}
+
+.sprite-ico-tw {
+    width: 17px;
+    height: 15px;
+    background-position: -30px -1719px;
+}
+
+.sprite-ico-tw-down {
+    width: 17px;
+    height: 15px;
+    background-position: -30px -1794px;
+}
+
+.sprite-ico-yt {
+    width: 20px;
+    height: 16px;
+    background-position: -30px -1869px;
+}
+
+.sprite-ico-yt-down {
+    width: 20px;
+    height: 16px;
+    background-position: -30px -1945px;
+}
