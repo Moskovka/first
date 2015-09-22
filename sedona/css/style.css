@@ -789,6 +789,18 @@ backround сделать*/
 
 }
 
+.sorting-title li a:hover {
+  color: #81b3d2;
+  border-bottom: 1px #81b3d2 dotted;
+
+}
+
+.sorting-title li a:active {
+  color: #000000;
+  border-bottom: none;
+
+}
+
 .sorting-title .active {
   color: #81b3d2;
   text-decoration: none;
