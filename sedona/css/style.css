@@ -23,6 +23,7 @@ body {
   width: 138px;
   margin-left: -69px;
   margin-top: -22px;
+  z-index: 1;
 
 }
 /*надо ли этот элемент при сокращении окна браузера как то зажимать?
@@ -75,14 +76,15 @@ body {
 
 .container {
   margin: 0 auto;
-  min-width: 768px;
-  max-width: 1200px;
+  /*min-width: 768px;*/
+  width: 1200px;
 
 }
 
 .main-image {
   background: url("../img/main-img.jpg");
   background-size: 100%;
+  position: relative;
 }
 
 .main-image::after {
@@ -99,6 +101,7 @@ body {
 
 .main-navigation {
   width: 1200px;
+  position: relative;
 
 }
 
@@ -162,8 +165,19 @@ body {
 
 }
 
+.reason-item-additional .reason-number::after {
+  color: #000000;
+
+}
+
+.reason-item-additional .reason-number::before {
+  color: #000000;
+
+}
+
+
 .reason-title {
-  width: 150px;
+  width: 151px;
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -175,9 +189,34 @@ body {
 }
 
 .reason-number {
-  padding-bottom: 28px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  position: relative;
+  width: 35px;
 
 }
+
+.reason-number::after, .reason-number::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: currentColor;
+  top: calc(50% - 1px);
+
+}
+
+.reason-number::after {
+  right: -50%;
+
+}
+
+.reason-number::before {
+  left: -50%;
+
+}
+
+
 
 .reason-item p {
   width: 300px;
@@ -480,7 +519,10 @@ body {
   vertical-align: middle;
 }
 
-/*как задать hover? вырезать картинку другого цвета?*/
+/*как задать hover? вырезать картинку другого цвета?
+
+Спрайт
+backround сделать*/
 
 
 
@@ -581,7 +623,6 @@ body {
 
 .options input[type="checkbox"] {
   display: none;
-
 }
 
 .options input[type="checkbox"] +label  {
@@ -604,8 +645,6 @@ body {
 
 }
 
-/*в макете и стайлгайде различаются значения, что выбирать?*/
-
 .options input[type="checkbox"]:checked +label::before {
   width: 26px;
   height: 22px;
@@ -613,10 +652,17 @@ body {
 
 }
 
-.options input[type="checkbox"]:hover +label::before {
+.options:hover input[type="checkbox"] +label::before {
   width: 20px;
   height: 20px;
   background-position: -30px -261px;
+
+}
+
+.options:hover input[type="checkbox"]:checked +label::before {
+  width: 26px;
+  height: 22px;
+  background-position: -30px -341px;
 
 }
 
@@ -655,6 +701,11 @@ body {
   border-radius: 50%;
   background: #ababab;
   cursor: pointer;
+
+}
+
+.slider .toggle:hover {
+  background: #1c4f80;
 
 }
 
@@ -731,11 +782,14 @@ body {
 }
 
 .sorting-arrow {
+    float: right;
+    margin: 0 75px;
 
 }
 
-.sorting-arrow ul {
-  margin: 0;
+.arrow {
+  display: inline-block;
+  font-size: 0px;
 
 }
 
@@ -747,13 +801,15 @@ body {
 .arrow {
   position: relative;
   border-radius: 5px;
+  display: inline-block;
+  width: 10px;
+  margin-left: 10px;
 
 }
 
 .arrow::after {
  content: '';
  position: absolute;
- bottom: -5px;
  border: 5px solid transparent;
 
 }
@@ -761,19 +817,42 @@ body {
 .arrow-up::after {
  content: '';
  position: absolute;
- right: 95px;
- bottom: -5px;
+ left: 0;
+ right: 0;
  border: 5px solid transparent;
  border-bottom: 10px solid #cccccc;
+ border-top: none;
+
 }
 
 .arrow-down::after {
   content: '';
   position: absolute;
-  right: 75px;
-  bottom: -10px;
+  left: 0;
+  right: 0;
   border: 5px solid transparent;
   border-top: 10px solid #81b3d2;
+  border-bottom: none;
+}
+
+.arrow-down:hover::after {
+  border-top-color: #000000;
+
+}
+
+.arrow-up:hover::after {
+  border-bottom-color: #000000;
+
+}
+
+.arrow-down:active::after {
+  border-top-color: #81b3d2;
+
+}
+
+.arrow-up:active::after {
+  border-bottom-color: #81b3d2;
+
 }
 
 .hotel-photo {
@@ -825,10 +904,12 @@ body {
 .stars {
   content: "";
   position: absolute;
-  top: 0;
+  top: 30;
   right: 0;
-  padding-top: 30px;
   margin-right: 72px;
+  font-size: 0px;
+  width: 90px;
+  height: 1rem;
 
 }
 
@@ -837,8 +918,6 @@ body {
   background-position: -30px -184px;
 
 }
-
-/* why not? */
 
 .point {
   content: "";
@@ -1054,3 +1133,6 @@ body {
     height: 16px;
     background-position: -30px -1945px;
 }
+
+
+/*map сделать img*/
