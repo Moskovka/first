@@ -983,6 +983,12 @@ backround сделать*/
 
 }
 
+.btn-more:active {
+  background: #5496bd;
+  color: #94b9d2;
+
+}
+
 .btn-book {
   background: #766357;
 
@@ -993,9 +999,11 @@ backround сделать*/
 
 }
 
-/*что такое положение down?*/
+.btn-book:active {
+  background: #503e33;
+  color: #928a85;
 
-
+}
 
 
 
