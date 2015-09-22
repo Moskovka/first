@@ -386,7 +386,27 @@ body {
 }
 
 .short input {
-  width: 103px;
+  width: 118px;
+  padding-left: 0px;
+  text-align: center;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -12px -1302px;
+
+}
+
+.short input:hover {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -12px -1444px;
+
+
+}
+
+.short input:active {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -12px -1373px;
 
 }
 
@@ -1030,6 +1050,11 @@ backround сделать*/
     background-repeat: no-repeat;
     display: block;
 }
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 
 .sprite-ico-2stars {
     width: 42px;
@@ -1145,47 +1170,54 @@ backround сделать*/
     background-position: -30px -1443px;
 }
 
-.sprite-ico-form-right {
-    width: 11px;
+.sprite-ico-form-number {
+    width: 87px;
     height: 11px;
     background-position: -30px -1506px;
 }
 
-.sprite-ico-form-right-down {
+.sprite-ico-form-right {
     width: 11px;
     height: 11px;
     background-position: -30px -1577px;
 }
 
-.sprite-ico-form-right-hvr {
+.sprite-ico-form-right-down {
     width: 11px;
     height: 11px;
     background-position: -30px -1648px;
 }
 
+.sprite-ico-form-right-hvr {
+    width: 11px;
+    height: 11px;
+    background-position: -30px -1719px;
+}
+
 .sprite-ico-tw {
     width: 17px;
     height: 15px;
-    background-position: -30px -1719px;
+    background-position: -30px -1790px;
 }
 
 .sprite-ico-tw-down {
     width: 17px;
     height: 15px;
-    background-position: -30px -1794px;
+    background-position: -30px -1865px;
 }
 
 .sprite-ico-yt {
     width: 20px;
     height: 16px;
-    background-position: -30px -1869px;
+    background-position: -30px -1940px;
 }
 
 .sprite-ico-yt-down {
     width: 20px;
     height: 16px;
-    background-position: -30px -1945px;
+    background-position: -30px -2016px;
 }
+
 
 
 /*map сделать img*/
