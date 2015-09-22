@@ -48,8 +48,8 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   padding-left: 5px;
   padding-right: 5px;
@@ -220,11 +220,6 @@ body {
   margin: 0;
 }
 
-.reason-row p {
-  padding-bottom: 62px;
-
-}
-
 .features-item {
   width: 400px;
   float: left;
@@ -253,12 +248,14 @@ body {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin-bottom: 24px;
 
 }
 
 .features-item p {
   padding-right: 50px;
   padding-left: 50px;
+  margin: 0px;
 
 }
 
