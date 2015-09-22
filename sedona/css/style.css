@@ -154,8 +154,12 @@ body {
 
 .reason-photo img {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
 }
+
+/*НЕ РАБОТАЕТ В SAFARI*/
 
 .reason-item-additional {
   background: #eeeeee;
@@ -505,6 +509,15 @@ body {
 
 }
 
+/*псевдо-элемент ссылке
+размер с иконку
+по центру
+спозиционирован
+фоновая картинка из спрайта
+
+a:hover::before {}
+*/
+
 .social-btn-tw {
   background-position: -15px -1513px;
 
@@ -550,13 +563,33 @@ body {
 
 .footer-copyright p {
   padding-top: 0px;
+  position: relative;
 
 }
 
 .footer-copyright a {
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  left: 165px;
+  bottom: -10px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -30px -1832px;
+  font-size: 0;
+  width: 113px;
+  height: 39px;
+
 }
+
+.footer-copyright a:hover {
+  background-position: -30px -2030px;
+
+}
+
+.footer-copyright a:active {
+  background-position: -30px -1931px;
+
+}
+
 
 /* ———— Внутренняя страница ———— */
 
@@ -1021,3 +1054,9 @@ body {
 
 
 /*map сделать img*/
+
+
+/*тени
+box-shadow
+или
+псевдо элементы — пройти курс*/
