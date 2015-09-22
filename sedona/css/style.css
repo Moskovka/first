@@ -385,6 +385,27 @@ body {
 
 }
 
+.long input {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 275px -1061px;
+  
+}
+
+.long input:hover {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 275px -1225px;
+
+}
+
+.long input:active {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 275px -1143px;
+
+}
+
 .short input {
   width: 118px;
   padding-left: 0px;
@@ -407,20 +428,6 @@ body {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -12px -1373px;
-
-}
-
-.hidden-form input.icon-arrival {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: 270px -1060px;
-
-}
-
-.hidden-form input.icon-departure {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: 270px -1060px;
 
 }
 
