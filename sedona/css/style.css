@@ -905,6 +905,10 @@ backround сделать*/
   color: #81b3d2;
 }
 
+.hotel-title:active {
+  color: #cacaca;
+}
+
 .hotel-rating {
   float: right;
 
