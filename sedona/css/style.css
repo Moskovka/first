@@ -306,7 +306,6 @@ body {
   background: #766357;
   font-size: 21px;
   line-height: 21px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
@@ -439,7 +438,6 @@ body {
   padding: 15px 20px;
   margin-top: 25px;
   margin-bottom: 55px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -518,6 +516,14 @@ body {
 a:hover::before {}
 */
 
+.social-btn::after {
+  width: 46px;
+  height: 48px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+/*
 .social-btn-tw {
   background-position: -15px -1513px;
 
@@ -538,11 +544,6 @@ a:hover::before {}
 
 }
 
-.social-btn-tw:active {
-  background-position: -15px -1703px;
-
-}
-
 .social-btn-fb:active {
 
 }
@@ -550,6 +551,8 @@ a:hover::before {}
 .social-btn-youtube:active {
 
 }
+*/
+
 
 /*не получается вырезать картинку с прозрачностью*/
 
