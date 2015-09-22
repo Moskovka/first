@@ -389,6 +389,13 @@ body {
 
 }
 
+.long input:focus {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 275px -1143px;
+
+}
+
 .short input {
   width: 118px;
   padding-left: 0px;
@@ -408,6 +415,13 @@ body {
 }
 
 .short input:active {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -12px -1373px;
+
+}
+
+.short input:focus {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -12px -1373px;
