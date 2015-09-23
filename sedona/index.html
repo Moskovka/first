@@ -51,7 +51,7 @@
           </p>
         </div>
         <div class="reason-photo">
-          <img src="img/reason-photo-1.jpg" width="100%" height=f"" alt="">
+          <img src="img/reason-photo-1.jpg" alt="Жильё">
         </div>
       </section>
 
@@ -78,7 +78,7 @@
 
       <section class="promo clearfix">
         <div class="reason-photo">
-          <img src="img/reason-photo-2.jpg" width="100%" height="" alt="">
+          <img src="img/reason-photo-2.jpg" alt="">
         </div>
         <div class="reason-item">
           <h2 class="reason-title">Там есть мост дьявола</h2>
@@ -178,22 +178,27 @@
           <a class="htmlacademy" href="https://htmlacademy.ru">Html Academy</a>
           </p>
         </section>
+        </div>
         <div class="footer-content">
+        </div>
       </div>
     </footer>
 
-  <div>
+  </div>
 
-  <script>
-	 var link = document.querySelector(".search-hotel");
-	  var popup = document.querySelector(".hidden-form");
+    <script>
+    	var link = document.querySelector(".search-hotel");
+    	var popup = document.querySelector(".hidden-form");
+    	var date = document.querySelector("[name=arrival]");
 
     link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("show-form");
-    });
+            event.preventDefault();
+          	popup.classList.add("show-form");
+    	date.focus();
+          });
 
-  </script>
+
+    </script>
 
 
   </body>
