@@ -712,8 +712,9 @@ body {
 }
 .hotel-info-item {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 5px;
   margin-bottom: 16px;
+  min-width: 110px;
 }
 
 
