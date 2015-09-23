@@ -170,19 +170,32 @@ body {
 }
 .features-item {
   width: 400px;
+  height: 50px;
   float: left;
   text-align: center;
   padding-top: 160px;
-  padding-bottom: 83px;
+  padding-bottom: 120px;
+  position: relative;
 }
-.features-item-flat {
-  background: url("../img/icon-flat.png") no-repeat 162px 60px;
+.features-item::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 163px;
+  display: block;
+  width: 75px;
+  height: 80px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
 }
-.features-item-food {
-  background: url("../img/icon-food.png") no-repeat 162px 60px;
+.features-item-flat::before {
+  background-position: -30px -2129px;
 }
-.features-item-souvenirs {
-  background: url("../img/icon-souvenirs.png") no-repeat 168px 54px;
+.features-item-food::before {
+  background-position: -30px -2261px;
+}
+.features-item-souvenirs::before {
+  background-position: -30px -2391px;
 }
 .features-title {
   font-size: 21px;
@@ -716,8 +729,6 @@ body {
   margin-bottom: 16px;
   min-width: 110px;
 }
-
-
 .stars {
   content: "";
   position: absolute;

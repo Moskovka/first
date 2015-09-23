@@ -201,6 +201,16 @@
       event.preventDefault();
       popup.classList.add("show-form");
       date.focus();
+
+    });
+
+
+    window.addEventListener("keydown", function(event) {
+      if (event.keyCode == 27) {
+        if (popup.classList.contains("show-form")) {
+          popup.classList.remove("show-form");
+        }
+      }
     });
   </script>
 
