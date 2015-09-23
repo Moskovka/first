@@ -8,9 +8,9 @@
     <title>Sedona</title>
   </head>
   <body>
-    <div class="shadow">
+    <div class="container">
     <header class="main-header">
-      <div class="container clearfix">
+      <div class="clearfix">
         <nav class="main-navigation">
           <div class="logo">
             <a href="index.html">
@@ -26,8 +26,6 @@
         </nav>
       </div>
     </header>
-
-    <div class="container">
 
       <div class="main-image">
         <div class="slogan">
@@ -134,8 +132,8 @@
         </p>
       </div>
 
-      <form action="" method="" class="search-form">
-        <a class="search-hotel" href="#">
+      <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
+        <a class="search-hotel" href="https://echo.htmlacademy.ru">
           Поиск гостиницы в Седоне
         </a>
         <div class="hidden-form">
@@ -161,13 +159,11 @@
       </form>
 
       <div class="map">
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52373.60527815567!2d-111.765784354541!3d34.87254817913901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1442938132334" width="1200" height="592" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52373.60527815567!2d-111.765784354541!3d34.87254817913901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1442938132334" width="1200" height="592" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
-    </div>
-
     <footer class="main-footer">
-      <div class="container clearfix">
+      <div class="clearfix">
         <div class="footer-content transparent">
         <section class="footer-hashtag">
           #VISITSEDONA
@@ -179,21 +175,26 @@
         </section>
         <section class="footer-copyright">
           <p>Website by
-          <a class="htmlacademy" href="http://htmlacademy.ru">Html Academy</a>
+          <a class="htmlacademy" href="https://htmlacademy.ru">Html Academy</a>
           </p>
         </section>
         <div class="footer-content">
       </div>
     </footer>
 
-
-    <script>
-      var link = document.querySelector(".search-hotel");
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-      console.log("Клик по кнопе Найти");
-      });
-    </script>
   <div>
+
+  <script>
+	 var link = document.querySelector(".search-hotel");
+	  var popup = document.querySelector(".hidden-form");
+
+    link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("show-form");
+    });
+
+  </script>
+
+
   </body>
 </html>

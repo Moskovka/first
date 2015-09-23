@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <title>Sedona</title>
   </head>
   <body>
-    <div class="shadow">
+    <div class="container">
     <header class="main-header">
-      <div class="container clearfix">
+      <div class="clearfix">
         <nav class="main-navigation">
           <div class="logo">
             <a href="index.html">
@@ -27,8 +28,6 @@
               </div>
     </header>
 
-    <div class="container">
-
       <div class="filter">
 
         <form action="" method="" class="main-filter clearfix">
@@ -38,6 +37,7 @@
               Инфраструктура
 
             </div>
+            <div class="options-in">
               <div class="options">
                 <input type="checkbox" name="pool" value="" id="pool" checked>
                 <label for="pool">Бассейн</label>
@@ -50,12 +50,14 @@
                 <input type="checkbox" name="wifi" value="" id="wifi">
                 <label for="wifi">Wi-fi</label>
               </div>
+            </div>
           </div>
 
           <div class="filter-unit">
             <div class="filter-title">
               Тип жилья
             </div>
+            <div class="options-in">
               <div class="options">
                 <input type="checkbox" name="hotel" value="" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
@@ -68,11 +70,12 @@
               <input type="checkbox" name="apartments" value="" id="apartments" checked>
                 <label for="apartments">Аппартаменты</label>
               </div>
+            </div>
           </div>
 
           <div class="ranges-filter-unit">
             <div class="filter-title">
-              Стоимость в сутки
+              Стоимость в сутки (р):
             </div>
 
             <div class="switching-unit">
@@ -126,7 +129,7 @@
             <img src="img/hotel-amara.jpg" width="135" height="90" alt="Отель Amara Resort & Spa">
           </div>
           <div class="hotel-description clearfix">
-            <div class="hotel-title">Amara Resort & Spa</div>
+            <a href="#" class="hotel-title">Amara Resort & Spa</a>
             <table class="hotel-info">
               <tr>
                 <td class="hotel-info-item">Гостиница</td>
@@ -153,7 +156,7 @@
           <img src="img/hotel-desert.jpg" width="135" height="90" alt="Отель Desert Quail Inn">
           </div>
           <div class="hotel-description clearfix">
-            <div class="hotel-title">Desert Quail Inn</div>
+            <a class="hotel-title">Desert Quail Inn</a>
             <table class="hotel-info">
               <tr>
                 <td class="hotel-info-item">Мотель</td>
@@ -181,7 +184,7 @@
           <img src="img/hotel-villas.jpg" width="135" height="90" alt="Отель Villas at Poco Diablo">
           </div>
           <div class="hotel-description clearfix">
-            <div class="hotel-title">Villas at Poco Diablo</div>
+            <a class="hotel-title">Villas at Poco Diablo</a>
             <table class="hotel-info">
               <tr>
                 <td class="hotel-info-item">Апартаменты</td>
@@ -203,14 +206,10 @@
             </div>
         </div>
 
-
-
       </div>
 
-    </div>
-
     <footer class="main-footer">
-      <div class="container clearfix">
+      <div class="clearfix">
         <section class="footer-hashtag">
           #VISITSEDONA
         </section>
@@ -221,8 +220,7 @@
         </section>
         <section class="footer-copyright">
           <p>Website by
-          <a href="http://htmlacademy.ru">
-            <img src="img/htmlacademy.png" alt="htmlacademy"></a>
+          <a class="htmlacademy" href="https://htmlacademy.ru">Html Academy</a>
           </p>
         </section>
       </div>
