@@ -22,6 +22,10 @@ body {
   margin-top: -20px;
   z-index: 1;
 }
+.logo img {
+  width: 138px;
+  height: 70px;
+}
 .main-navigation ul {
   margin: 0;
   padding: 0;
@@ -261,13 +265,13 @@ body {
   color: #000000;
   position: absolute;
   box-sizing: border-box;
-  display: none;
-  transform: translateY(-385px);
   opacity: 0;
+  -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 .show-form {
-  display: block;
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
   transform: translate(0);
   opacity: 1;
 }
@@ -327,69 +331,48 @@ body {
   background-repeat: no-repeat;
   background-position: 275px -1143px;
 }
-
 .short input {
-  width: 118px;
+  width: 126px;
   padding-left: 0px;
   text-align: center;
-  position: relative;
   border: none;
-  /*
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -12px -1302px;
-  */
 }
-
 .control-value {
   width: 118px;
   display: inline-block;
   vertical-align: baseline;
+  position: relative;
 }
 .control-value button {
   border: none;
-  opacity: 0.2;
-}
-.plus {
+  background-color: transparent;
   content: "";
   position: absolute;
-  left: 130px;
-  top: 10px;
+  top: 9px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -30px -1310px;
   font-size: 0;
 }
 .minus {
-  content: "";
-  position: absolute;
-  left: 205px;
-  top: 10px;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+  left: 14px;
+  background-position: -30px -1310px;
+}
+.minus:hover {
+  background-position: -30px -1452px;
+}
+.minus:active {
+  background-position: -30px -1380px;
+}
+.plus {
+  left: 97px;
   background-position: -106px -1310px;
-  font-size: 0;
 }
-
-
-/*
-.short input:hover {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -12px -1444px;
+.plus:hover {
+  background-position: -106px -1452px;
 }
-.short input:active {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -12px -1373px;
+.plus:active {
+  background-position: -106px -1382px;
 }
-.short input:focus {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -12px -1373px;
-}
-*/
-
 .btn-find {
   display: inline-block;
   vertical-align: top;
@@ -512,7 +495,6 @@ body {
   background-size: 100%;
   background-position: center;
   min-height: 217px;
-
 }
 .filter-unit {
   float: left;
@@ -574,10 +556,8 @@ body {
   position: relative;
   padding-left: 40px;
   max-width: 150px;
+  word-wrap: break-word;
 }
-
-/*почему-то max-width не работает для не выбранных пунктов*/
-
 .options input[type="checkbox"] +label::before {
   content: "";
   display: block;
@@ -787,7 +767,8 @@ body {
   padding-right: 5px;
   margin-bottom: 16px;
   min-width: 110px;
-  max-width: 300px; /*почему-то не работает*/
+  max-width: 300px;
+  word-wrap: break-word;
 }
 .stars {
   content: "";
