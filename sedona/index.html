@@ -12,7 +12,6 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <div class="clearfix">
         <nav class="main-navigation">
           <div class="logo">
             <a href="index.html">
@@ -26,12 +25,11 @@
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
-      </div>
     </header>
 
     <div class="main-image">
       <div class="slogan">
-        <img src="img/slogan.png" alt="Седона">
+        <img src="img/slogan.png" alt="Седона" width="458" height="352">
       </div>
     </div>
 
@@ -54,7 +52,7 @@
         </p>
       </div>
       <div class="reason-photo">
-        <img src="img/reason-photo-1.jpg" alt="Жильё">
+        <img src="img/reason-photo-1.jpg" width="800" height="256" alt="Жильё">
       </div>
     </section>
 
@@ -82,7 +80,7 @@
 
     <section class="promo clearfix">
       <div class="reason-photo">
-        <img src="img/reason-photo-2.jpg" alt="">
+        <img src="img/reason-photo-2.jpg" width="800" height="256" alt="Еда">
       </div>
       <div class="reason-item">
         <h2 class="reason-title">Там есть мост дьявола</h2>
@@ -152,11 +150,19 @@
         </div>
         <div class="form-cell short">
           <label for="adults">Взрослые:</label>
+          <div class="control-value">
           <input type="text" name="adults" value="2" id="adults">
+          <button class="plus">Плюс</button>
+          <button class="minus">Минус</button>
+          </div>
         </div>
         <div class="form-cell short">
           <label for="children">Дети:</label>
+          <div class="control-value">
           <input type="text" name="children" value="0" id="children">
+          <button class="plus">Плюс</button>
+          <button class="minus">Минус</button>
+          </div>
         </div>
 
         <button type="submit" class="btn-find">Найти</button>
@@ -185,35 +191,12 @@
             </p>
           </section>
         </div>
-        <div class="footer-content">
-        </div>
       </div>
     </footer>
 
   </div>
 
-  <script>
-    var link = document.querySelector(".search-hotel");
-    var popup = document.querySelector(".hidden-form");
-    var date = document.querySelector("[name=arrival]");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("show-form");
-      date.focus();
-
-    });
-
-
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode == 27) {
-        if (popup.classList.contains("show-form")) {
-          popup.classList.remove("show-form");
-        }
-      }
-    });
-  </script>
-
+  <script src="js/main.js"></script>
 
 </body>
 
