@@ -806,6 +806,8 @@ body {
   text-align: center;
   color: #666666;
   margin-right: 72px;
+  max-width: 150px;
+  word-wrap: break-word;
 }
 .btn {
   display: inline-block;
@@ -815,6 +817,8 @@ body {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
+  max-width: 300px;
+  word-wrap: break-word;
 }
 .btn-more {
   display: inline-block;
